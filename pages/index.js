@@ -11,6 +11,8 @@ export default function Home({
     currencyCode,
     currencySymbol,
 }) {
+    name = decodeURIComponent(name);
+    city = decodeURIComponent(city);
     return (
         <Layout title="Home">
             <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-50">
